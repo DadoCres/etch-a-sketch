@@ -1,3 +1,8 @@
+body {
+    background-color: #852eb0;
+    margin: 0;
+}
+
 .game {
     display: flex;
     flex-direction: column;
@@ -21,4 +26,32 @@
     height: 1fr;
     border: 2px solid black;
     background-color: aquamarine;
+}
+
+.title {
+    color: #f7bb43;
+    font-size: 48px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reset {
+    padding: 20px;
+    background-color: #370252;
+    color: #f7bb43;
+    font-size: 24px;
+    border-radius: 15px 50px;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f7bb43;
+    background-color: #370252;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
