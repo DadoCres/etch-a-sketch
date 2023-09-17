@@ -55,3 +55,9 @@ body {
     bottom: 0;
     width: 100%;
 }
+
+.radio {
+    padding: 10px;
+    color: #f7bb43;
+    font-weight: 800;
+}
