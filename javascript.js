@@ -1,4 +1,5 @@
 let container = document.querySelector('.container');
+const radioButtons = document.querySelectorAll('input[name="color"]');
 
 function makeGrid() {
     for(let i = 0; i < 16*16; i++) {
@@ -12,7 +13,14 @@ function makeGrid() {
 makeGrid();
 
 function addColor(e) {
-    e.target.style = `background-color: black;`;
+
+    for(radioButton of radioButtons) {
+        if(radioButton.checked) {
+            e.target.style = 'background-color: ' + radioButton.value;
+        }
+    }
+    
+    //e.target.style = `background-color: black;`;
 }
 
 const reset = document.querySelector('.reset');
